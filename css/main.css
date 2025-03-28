@@ -1416,7 +1416,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #f0ffe3;
+  background: #6c9af7;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2620,6 +2620,19 @@ ul.breadcrumb li:last-child {
     color: #eee;
   }
 }
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: 0;
+}
+.gt-container .gt-popup .gt-action.is--active::before {
+  top: 0.7em;
+}
+@media (prefers-color-scheme: dark) {
+  .gt-container .gt-header-textarea {
+    background-color: var(--card-bg-color) !important;
+  }
+}
 .search-active {
   overflow: hidden;
 }
@@ -2977,8 +2990,4 @@ header.header {
   pointer-events: none;
   position: fixed;
   top: 0;
-}
-.giscus {
-  max-width: unset;
-  box-sizing: border-box;
 }
