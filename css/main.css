@@ -1416,7 +1416,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #1c9f88;
+  background: #f0ffe3;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -1854,7 +1854,6 @@ pre code {
 }
 .back-to-top span {
   margin-right: 8px;
-  display: none;
 }
 .back-to-top .fa {
   text-align: center;
@@ -2972,6 +2971,12 @@ header.header {
 }
 .sub-menu .menu-item {
   display: inline-block;
+}
+.fireworks {
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
 }
 .giscus {
   max-width: unset;
