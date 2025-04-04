@@ -346,6 +346,18 @@ x_{n+1} = x^* + \eta_{n+1}  = f(x_n) = f(x^* + \eta_n) = f(x^*) + f&#x27;(x^*)\e
       </tags>
   </entry>
   <entry>
+    <title>solve_diffrential_equations</title>
+    <url>/posts/c95d1255/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Physics Stack</category>
+        <category>Computational Physics</category>
+      </categories>
+      <tags>
+        <tag>计算物理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第八号c小调弦乐四重奏导赏</title>
     <url>/posts/9537d167/</url>
     <content><![CDATA[<h1>背景</h1>
@@ -425,18 +437,6 @@ x_{n+1} = x^* + \eta_{n+1}  = f(x_n) = f(x^* + \eta_n) = f(x^*) + f&#x27;(x^*)\e
         <tag>肖斯塔科维奇</tag>
         <tag>导赏</tag>
         <tag>弦乐四重奏</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>solve_diffrential_equations</title>
-    <url>/posts/c95d1255/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Physics Stack</category>
-        <category>Computational Physics</category>
-      </categories>
-      <tags>
-        <tag>计算物理</tag>
       </tags>
   </entry>
 </search>
