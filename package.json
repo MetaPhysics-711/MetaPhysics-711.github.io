@@ -42,6 +42,6 @@
     "hexo-theme-landscape": "^1.0.0",
     "katex": "^0.16.44",
     "markdown-it-footnote": "^4.0.0",
-    "mouse-firework": "^0.1.1"
+    "mouse-firework": "^0.2.0"
   }
 }
