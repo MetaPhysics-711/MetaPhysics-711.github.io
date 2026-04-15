@@ -1,0 +1,76 @@
+/* 正文：英文走 Times/Sylfaen，中文走文楷 */
+body,
+#article-container,
+#aside-content,
+#recent-posts > .recent-post-item > .recent-post-info > .content,
+.layout > div:first-child:not(.recent-posts) {
+  font-family: "Times New Roman", "Sylfaen", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif !important;
+  font-weight: 500;
+  line-height: 1.9;
+}
+
+/* 首页大标题 */
+#site-title {
+  font-family: "Sylfaen", "Times New Roman", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+}
+
+/* 首页副标题 */
+#site-subtitle {
+  font-family: "Sylfaen", "Times New Roman", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em;
+}
+
+/* 左上角站名 */
+#nav #site-name,
+#nav .site-name {
+  font-family: "Sylfaen", "Times New Roman", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif !important;
+  font-weight: 700 !important;
+}
+
+/* 首页文章卡片标题 */
+#recent-posts .recent-post-item .post-title,
+#recent-posts .recent-post-item .article-title {
+  font-family: "Sylfaen", "Times New Roman", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em;
+}
+
+/* 正文页标题 */
+#post-info .post-title,
+.post-title {
+  font-family: "Sylfaen", "Times New Roman", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.015em;
+}
+
+/* 正文中的各级标题 */
+#article-container h1,
+#article-container h2,
+#article-container h3,
+#article-container h4 {
+  font-family: "Sylfaen", "Times New Roman", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif !important;
+  font-weight: 600 !important;
+}
+
+/* 侧边栏作者名 */
+.author-info__name {
+  font-family: "Sylfaen", "Times New Roman", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif !important;
+  font-weight: 700 !important;
+}
+
+/* 菜单不要太飘 */
+#nav .menus_items .menus_item a {
+  font-family: "Times New Roman", "Sylfaen", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif !important;
+  font-weight: 600;
+}
+
+/* 代码字体单独保留 */
+code,
+pre,
+kbd,
+samp {
+  font-family: "JetBrains Mono", Consolas, monospace !important;
+}
