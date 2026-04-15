@@ -1742,7 +1742,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: "Times New Roman", "Sylfaen", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif;
+  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   scroll-behavior: smooth;
@@ -1861,7 +1861,7 @@ a:hover {
 .site-name,
 #aside-content .author-info-name,
 #aside-content .author-info-description {
-  font-family: "Times New Roman", "Sylfaen", "LXGW WenKai", "STKaiti", "KaiTi", "Kaiti SC", serif;
+  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
 }
 .text-center {
   text-align: center;
