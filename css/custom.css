@@ -1,69 +1,35 @@
-/* 正文：英文走 Times/Sylfaen，中文走文楷 */
+/* 正文：英文 Times / Sylfaen，中文 Noto Serif SC */
 body,
 #article-container,
 #aside-content,
 #recent-posts > .recent-post-item > .recent-post-info > .content,
 .layout > div:first-child:not(.recent-posts) {
   font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.9;
 }
 
-/* 首页大标题 */
-#site-title {
-  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.02em;
-}
-
-/* 首页副标题 */
-#site-subtitle {
-  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.01em;
-}
-
-/* 左上角站名 */
+/* 左上角站名、首页大标题、文章标题：更复古 */
 #nav #site-name,
-#nav .site-name {
-  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
-  font-weight: 700 !important;
-}
-
-/* 首页文章卡片标题 */
+#nav .site-name,
+#site-title,
+#site-subtitle,
 #recent-posts .recent-post-item .post-title,
-#recent-posts .recent-post-item .article-title {
-  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.01em;
-}
-
-/* 正文页标题 */
+#recent-posts .recent-post-item .article-title,
 #post-info .post-title,
-.post-title {
-  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.015em;
-}
-
-/* 正文中的各级标题 */
+.post-title,
 #article-container h1,
 #article-container h2,
-#article-container h3,
-#article-container h4 {
-  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
-  font-weight: 600 !important;
+#article-container h3 {
+  font-family: "ZCOOL XiaoWei", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em;
 }
 
-/* 侧边栏作者名 */
+/* 菜单和侧边栏作者名仍然稳一点 */
+#nav .menus_items .menus_item a,
 .author-info__name {
-  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
-  font-weight: 700 !important;
-}
-
-/* 菜单不要太飘 */
-#nav .menus_items .menus_item a {
-  font-family: "Sylfaen", "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
+  font-family: "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
   font-weight: 600;
 }
 
