@@ -1,0 +1,12 @@
+- class_name: Friends
+  class_desc: 海内存知已，天涯若比邻。
+  link_list:
+    - name: arapoken
+      link: https://arapoken.github.io/
+      avatar: https://arapoken.github.io/images/kkr.jpg
+      descr: "Now it's our turn to study statistical mechanics"
+    - name: AIB001
+      link: https://aib001.github.io/
+      avatar: https://res.cloudinary.com/digumuwth/image/upload/avatar_szq_dmkpza?_a=BAMAJaWO0
+      descr: An admirable senpai!
+
