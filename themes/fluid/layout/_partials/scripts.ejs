@@ -1,0 +1,63 @@
+<!-- 异步加载管理器 -->
+<script>
+  // 配置CDN和本地备用路径
+  const scriptConfig = {
+    jquery: {
+      cdn: 'https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js',
+      local: '<%= url_for("/lib/jquery.min.js") %>'
+    },
+    scripts: [
+      '<%= url_for(theme.static_prefix.bootstrap + "/js/bootstrap.min.js") %>',
+      '<%= url_for(theme.static_prefix.internal_js + "/events.js") %>',
+      '<%= url_for(theme.static_prefix.internal_js + "/plugins.js") %>',
+      <% if (theme.lazyload.enable) { %>
+        '<%= url_for(theme.static_prefix.internal_js + "/img-lazyload.js") %>',
+      <% } %>
+      '<%= url_for(theme.static_prefix.internal_js + "/boot.js") %>'
+    ]
+  };
+
+  // 现代化脚本加载器
+  const loadScript = (url, isCritical = false) => {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = url;
+      script.onload = resolve;
+      script.onerror = reject;
+      isCritical ? document.head.prepend(script) : document.body.appendChild(script);
+    });
+  };
+
+  // 主加载流程
+  const init = async () => {
+    try {
+      // 阶段1：尝试CDN加载jQuery
+      try {
+        await loadScript(scriptConfig.jquery.cdn, true);
+        console.log('jQuery CDN加载成功');
+      } catch (e) {
+        console.warn('CDN加载失败，切换到本地jQuery');
+        await loadScript(scriptConfig.jquery.local, true);
+      }
+
+      // 阶段2：加载其他脚本
+      await Promise.all(scriptConfig.scripts.map(url => loadScript(url)));
+      console.log('所有脚本加载完成');
+
+      // 阶段3：修复未解析路径
+      document.querySelectorAll('script[src*="%7B%7B"], script[src*="{{"]').forEach(script => {
+        const newSrc = script.src.replace(/%7B%7B.*%7D%7D|\{\{.*?\}\}/g, '');
+        if (newSrc !== script.src) {
+          console.warn('修复未解析路径:', script.src, '->', newSrc);
+          script.src = newSrc;
+        }
+      });
+    } catch (error) {
+      console.error('脚本加载失败:', error);
+      // 这里可以添加错误处理UI
+    }
+  };
+
+  // 启动加载
+  if (!window.jQuery) init();
+</script>
